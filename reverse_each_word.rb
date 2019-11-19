@@ -3,8 +3,7 @@ def reverse_each_word(sentence)
   sentence = ""
   words.collect do |word|
     word = word.reverse
-    puts words[words.length - 1]
-    if (words[words.length - 1] == word)
+    if (words[words.length - 1] == word.reversed)
       sentence << "#{word}"
     else
       sentence << "#{word} "
