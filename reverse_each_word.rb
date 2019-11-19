@@ -4,7 +4,7 @@ def reverse_each_word(sentence)
   words.collect do |word|
     word = word.reverse
     if (words[words.length - 1] == word)
-      sentence << word
+      sentence << "#{word}"
     else
       sentence << "#{word} "
     end
